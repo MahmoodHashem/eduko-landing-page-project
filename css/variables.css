@@ -1,0 +1,109 @@
+
+@font-face {
+  font-family: "Vazir";
+  src: url('/assets/fonts/Vazirmatn-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('/assets/fonts/Persian-Yekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'IranKharazmi';
+    src: url('/assets/fonts/IRAN-Kharazmi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
+
+
+:root {
+    /* Primary Color */
+    --color-primary-100: #fef8d9;
+    --color-primary-200: #fdf1b3;
+    --color-primary-300: #fbe98d;
+    --color-primary-400: #f9e267;
+    --color-primary-500: #f1bd02;
+    --color-primary-600: #c19702;
+    --color-primary-700: #917101;
+    --color-primary-800: #614c01;
+    --color-primary-900: #302600;
+  
+    /* Secondary Color */
+    --color-secondary-100: #e6f7f3;
+    --color-secondary-200: #b3e7df;
+    --color-secondary-300: #80d7cb;
+    --color-secondary-400: #4dc7b7;
+    --color-secondary-500: #16a282;
+    --color-secondary-600: #128268;
+    --color-secondary-700: #0d614e;
+    --color-secondary-800: #094134;
+    --color-secondary-900: #04201a;
+
+  
+      /* Blue Color */
+      --color-blue-100: #e6f3ff;
+      --color-blue-200: #bde0ff;
+      --color-blue-300: #94cdff;
+      --color-blue-400: #6bbaff;
+      --color-blue-500: #4299e1;
+      --color-blue-600: #3182ce;
+      --color-blue-700: #2b6cb0;
+      --color-blue-800: #2c5282;
+      --color-blue-900: #1a365d;
+  
+      /* Red Color */
+      --color-red-100: #fff5f5;
+      --color-red-200: #fed7d7;
+      --color-red-300: #feb2b2;
+      --color-red-400: #fc8181;
+      --color-red-500: #f56565;
+      --color-red-600: #e53e3e;
+      --color-red-700: #c53030;
+      --color-red-800: #9b2c2c;
+      --color-red-900: #742a2a;
+
+  
+    /* Gray Color */
+    --color-gray-100: #f7f7f8;
+    --color-gray-200: #e8e9eb;
+    --color-gray-300: #d9dadd;
+    --color-gray-400: #cbccd0;
+    --color-gray-500: #afb1b9;
+    --color-gray-600: #8c8e94;
+    --color-gray-700: #696a6f;
+    --color-gray-800: #45474a;
+    --color-gray-900: #232325;
+  
+    /* Dark Color */
+    --color-dark-100: #e6e6e7;
+    --color-dark-200: #b3b3b5;
+    --color-dark-300: #808083;
+    --color-dark-400: #4d4d51;
+    --color-dark-500: #1a1929;
+    --color-dark-600: #151421;
+    --color-dark-700: #0f0f19;
+    --color-dark-800: #0a0a10;
+    --color-dark-900: #050508;
+  
+    /* Light Green */
+    --color-light-green: #effaf6;
+
+    --font-primary: 'Vazier', system-ui, -apple-system, sans-serif;
+    --font-secondary: 'Yekan', system-ui, -apple-system, sans-serif;
+}
+  
+
+  html {
+    font-family: var(--font-primary);
+    direction: rtl;
+  }
