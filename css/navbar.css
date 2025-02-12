@@ -264,7 +264,7 @@
   .navbar-mobile__search-input {
     flex: 1;
     padding: 0.8rem;
-    border: 1px solid var(--color-gray-300); 
+    border: 1px solid var(--color-gray-300);
     border-radius: 0.5rem;
   }
 
@@ -275,25 +275,22 @@
 
   .navbar-mobile__search-btn {
     font-size: 1.5rem;
-  } 
+  }
 
   .navbar-mobile__menu {
     padding: 1.6rem;
   }
-
 
   .navbar-mobile__menu-link {
     color: var(--color-dark-500);
     font-size: 1.6rem;
   }
 
-
   .navbar-mobile__menu-item {
     border-bottom: 1px solid var(--color-gray-300);
     padding: 1.6rem;
   }
 
- 
   .navbar-mobile__submenu-toggle {
     font-size: 1.6rem;
     display: flex;
@@ -302,35 +299,37 @@
     width: 100%;
   }
 
-
   .navbar-mobile__submenu {
-        background-color: var(--color-gray-100);
-        font-size: 1.4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        max-height: 0;
-        overflow: hidden;
-        border-radius: 0.6rem;
-        transition: all 0.3s ease-in-out;
-        -webkit-border-radius: 0.6rem;
-        -moz-border-radius: 0.6rem;
-        -ms-border-radius: 0.6rem;
-        -o-border-radius: 0.6rem;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-}
+    background-color: var(--color-gray-100);
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
 
   .navbar-mobile__menu-item-expanded .navbar-mobile__submenu {
-    max-height: 30rem; 
+    max-height: 30rem;
     padding: 1rem;
     margin: 1rem 0;
   }
 
- 
+  .navbar-mobile__menu-arrow {
+    transition: transform 0.3s ease;
+  }
 
-
-
+  .navbar-mobile__menu-item-expanded .navbar-mobile__menu-arrow {
+    transform: rotate(180deg);
+  }
 }
