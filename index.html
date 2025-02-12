@@ -1,11 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/scrollbar.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/menu-icon.css" />
     <title>Eduko</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <a href="#home" class="navbar__logo-link"
+            ><img
+              src="/assets/images/logo.svg"
+              alt="logo"
+              class="navbar__logo-img"
+          /></a>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu-item">
+            <a href="#home" class="navbar__menu-link">صفحه اصلی</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#about-us" class="navbar__menu-link">در باره ما</a>
+          </li>
+          <li class="navbar__menu-item navbar__menu-item--has-dropdown">
+            <a href="#courses" class="navbar__menu-link">دوره ها</a>
+            <div class="navbar__dropdown">
+              <ul class="navbar__dropdown-list">
+                <li class="navbar__dropdown-item">
+                  <a href="#programming" class="navbar__dropdown-link">
+                    برنامه نویسی وب
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#design" class="navbar__dropdown-link">
+                    طراحی گرافیک
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#marketing" class="navbar__dropdown-link">
+                    دیجیتال مارکیتینگ
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__menu-item navbar__menu-item--has-dropdown">
+            <a href="#pages" class="navbar__menu-link navbar__menu-link--active"
+              >برگه ها</a
+            >
+            <div class="navbar__dropdown">
+              <ul class="navbar__dropdown-list">
+                <li class="navbar__dropdown-item">
+                  <a href="#about" class="navbar__dropdown-link"> درباره ما </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#contact-us" class="navbar__dropdown-link">
+                    تماس با ما
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#faq" class="navbar__dropdown-link">
+                    سوالات متداول
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__menu-item navbar__menu-item--has-dropdown">
+            <a href="#blog" class="navbar__menu-link">وبلاگ</a>
+            <div class="navbar__dropdown">
+              <ul class="navbar__dropdown-list">
+                <li class="navbar__dropdown-item">
+                  <a href="#latest" class="navbar__dropdown-link">
+                    آخرین مطالب
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#popular" class="navbar__dropdown-link">
+                    محبوب ترین ها
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#categories" class="navbar__dropdown-link">
+                    دسته بندی ها
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#programming" class="navbar__dropdown-link">
+                    برنامه نویسی وب
+                  </a>
+                </li>
+                <li class="navbar__dropdown-item">
+                  <a href="#design" class="navbar__dropdown-link">
+                    طراحی گرافیک
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#shop" class="navbar__menu-link">فروشگاه</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#contact-us" class="navbar__menu-link">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="navbar__utils">
+          <button class="navbar__utils-btn navbar__utils-btn--search">
+            <i class="fa-solid fa-magnifying-glass"></i></button
+          ><a href="" class="navbar__utils-btn navbar__utils-btn--sign-in">
+            ورود </a
+          ><a href="" class="navbar__utils-btn navbar__utils-btn--sign-up">
+            ثبت نام
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Navbar -->
+      <nav class="navbar-mobile">
+        <div class="navbar-mobile__top">
+          <div class="navbar-mobile__brand">
+            <a href="#home" class="navbar-mobile__logo-link">
+              <img
+                src="/assets/images/logo.svg"
+                alt="logo"
+                class="navbar-mobile__logo-img"
+              />
+            </a>
+          </div>
+
+          <button class="navbar-mobile__toggle">
+            <div class="navbar-mobile__trigger">
+              <span class="navbar-mobile__trigger-line"></span
+              ><span class="navbar-mobile__trigger-line"></span
+              ><span class="navbar-mobile__trigger-line"></span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Panel (Slider) -->
+
+        <div class="navbar-mobile__panel ">
+          <div class="navbar-mobile__header">
+            <div class="navbar-mobile__user">
+              <div class="navbar-mobile__auth">
+                <a
+                  href="#sign-in"
+                  class="navbar-mobile__auth-btn navbar-mobile__auth-btn--sign-up"
+                >
+                  ورود
+                </a>
+                <a
+                  href="#sign-up"
+                  class="navbar-mobile__auth-btn navbar-mobile__auth-btn--sign-in"
+                >
+                  ثبت نام
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-mobile__search">
+            <input
+              type="search"
+              class="navbar-mobile__search-input"
+              placeholder="جستجو کنید..."
+            />
+            <button class="navbar-mobile__search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <ul class="navbar-mobile__menu">
+            <li class="navbar-mobile__menu-item">
+              <a href="#home" class="navbar-mobile__menu-link">صفحه اصلی</a>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#about-us" class="navbar-mobile__menu-link"
+                >در باره ما</a
+              >
+            </li>
+            <li class="navbar-mobile__menu-item navbar-mobile__menu-item--has-submenu ">
+              <div class="navbar-mobile__menu-header">
+                <button class="navbar-mobile__submenu-toggle">دوره ها
+
+                  <i class="fa-solid fa-angle-down navbar-mobile__menu-arrow"></i>
+                </button>
+                
+              </div>
+
+              <ul class="navbar-mobile__submenu">
+                <li class="navbar-mobile__submenu-item">
+                  <a href="#programming" class="navbar-mobile__submenu-link">
+                    برنامه نویسی وب
+                  </a>
+                </li>
+                <li class="navbar-mobile__submenu-item">
+                  <a href="#design" class="navbar-mobile__submenu-link">
+                    طراحی گرافیک
+                  </a>
+                </li>
+                <li class="navbar-mobile__submenu-item">
+                  <a href="#marketing" class="navbar-mobile__submenu-link">
+                    مارکتینگ
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-mobile__menu-item navbar-mobile__menu-item--has-submenu ">
+              <div class="navbar-mobile__menu-header">
+                <button class="navbar-mobile__submenu-toggle">برگه ها
+
+                  <i class="fa-solid fa-angle-down navbar-mobile__menu-arrow"></i>
+                </button>
+                
+              </div>
+
+              <ul class="navbar-mobile__submenu">
+                <li class="navbar-mobile__submenu-item">
+                  <a href="#programming" class="navbar-mobile__submenu-link">
+                    در باره ما
+                  </a>
+                </li>
+                <li class="navbar-mobile__submenu-item">
+                  <a href="#design" class="navbar-mobile__submenu-link">
+                    تماس با ما 
+                  </a>
+                </li>
+                <li class="navbar-mobile__submenu-item">
+                  <a href="#marketing" class="navbar-mobile__submenu-link">
+                  سوالات متداول
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#blog" class="navbar-mobile__menu-link">وبلاگ</a>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#shop" class="navbar-mobile__menu-link">فروشگاه</a>
+            </li>
+            <li class="navbar-mobile__menu-item">
+              <a href="#contact-us" class="navbar-mobile__menu-link"
+                >تماس با ما</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script src="/scripts/menu-toggler.js"></script>
+    <script src="/scripts/submenuToggle.js" ></script>
+  </body>
 </html>
