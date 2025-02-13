@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/menu-icon.css" />
+    <link rel="stylesheet" href="./css/hero.css">
     <title>Eduko</title>
   </head>
   <body>
@@ -149,7 +150,7 @@
 
         <!-- Mobile Menu Panel (Slider) -->
 
-        <div class="navbar-mobile__panel ">
+        <div class="navbar-mobile__panel">
           <div class="navbar-mobile__header">
             <div class="navbar-mobile__user">
               <div class="navbar-mobile__auth">
@@ -189,13 +190,17 @@
                 >در باره ما</a
               >
             </li>
-            <li class="navbar-mobile__menu-item navbar-mobile__menu-item--has-submenu ">
+            <li
+              class="navbar-mobile__menu-item navbar-mobile__menu-item--has-submenu"
+            >
               <div class="navbar-mobile__menu-header">
-                <button class="navbar-mobile__submenu-toggle">دوره ها
+                <button class="navbar-mobile__submenu-toggle">
+                  دوره ها
 
-                  <i class="fa-solid fa-angle-down navbar-mobile__menu-arrow"></i>
+                  <i
+                    class="fa-solid fa-angle-down navbar-mobile__menu-arrow"
+                  ></i>
                 </button>
-                
               </div>
 
               <ul class="navbar-mobile__submenu">
@@ -216,13 +221,17 @@
                 </li>
               </ul>
             </li>
-            <li class="navbar-mobile__menu-item navbar-mobile__menu-item--has-submenu ">
+            <li
+              class="navbar-mobile__menu-item navbar-mobile__menu-item--has-submenu"
+            >
               <div class="navbar-mobile__menu-header">
-                <button class="navbar-mobile__submenu-toggle">برگه ها
+                <button class="navbar-mobile__submenu-toggle">
+                  برگه ها
 
-                  <i class="fa-solid fa-angle-down navbar-mobile__menu-arrow"></i>
+                  <i
+                    class="fa-solid fa-angle-down navbar-mobile__menu-arrow"
+                  ></i>
                 </button>
-                
               </div>
 
               <ul class="navbar-mobile__submenu">
@@ -233,12 +242,12 @@
                 </li>
                 <li class="navbar-mobile__submenu-item">
                   <a href="#design" class="navbar-mobile__submenu-link">
-                    تماس با ما 
+                    تماس با ما
                   </a>
                 </li>
                 <li class="navbar-mobile__submenu-item">
                   <a href="#marketing" class="navbar-mobile__submenu-link">
-                  سوالات متداول
+                    سوالات متداول
                   </a>
                 </li>
               </ul>
@@ -257,9 +266,93 @@
           </ul>
         </div>
       </nav>
+
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <span class="hero__tag"> بهترین ورژن خود را پیدا کنید </span>
+
+            <h1 class="hero__title">
+              آماده یادگیری
+              <span class="hero__title-highligh"> دانش </span>
+              و مهارت‌های جدید باشید
+            </h1>
+
+            <p class="hero__description">
+              ما برای شما بهترین دوره‌ها و مدرسین را فراهم کردیم تا به دانش و
+              مهارت‌های خود اضافه کنید
+            </p>
+
+            <div class="hero__buttons">
+              <button class="hero__cta">شروع کنید</button>
+              <button class="hero__video">
+                <span class="hero__video-icon">
+                  <i class="fa-solid  fa-play"></i>
+                </span>
+                
+                ویدیو معرفی
+              </button>
+            </div>
+          </div>
+          <div class="hero__visuals">
+            <div class="hero__image-container">
+              <img
+                src="./assets/images/shape-8.svg"
+                alt="hero pattern"
+                class="hero__image-pattern"
+              />
+              <img
+                src="./assets/images/hero-img.png"
+                alt="hero image"
+                class="hero__image"
+              />
+            </div>
+
+            <!-- Floating cards -->
+            <div class="hero__card hero__card--students">
+              <div class="hero__card-icon">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <div class="hero__card-content">
+                <span class="hero__card-number">25k+</span>
+                <span class="hero__card-title">دانشجویان</span>
+               
+              </div>
+            </div>
+
+            <div class="hero__card hero__card-teachers">
+              <div class="hero__card-content">
+                <span class="hero__card-number">200+</span>
+                <span class="hero__card-title">مدرسین حرفه ای</span>
+              </div>
+
+              <div class="hero__card-avatars">
+                <i class="fa-solid fa-user-tie"></i>
+                <i class="fa-solid fa-user-tie"></i>
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__shapes">
+          <img 
+            class="hero__shape hero__shape--1"
+          src="./assets/images/shape-1.svg" alt="pattern">
+          <img
+          class="hero__shape hero__shape--2"
+          src="./assets/images/shape-2.svg" alt="pattern" />
+          <img 
+          class="hero__shape hero__shape--3"
+          src="./assets/images/shape-3.svg" alt="pattern" />
+          <img 
+          class="hero__shape hero__shape--4"
+          src="./assets/images/shape-4.svg" alt="pattern" />
+        </div>
+      </section>
     </header>
 
     <script src="/scripts/menu-toggler.js"></script>
-    <script src="/scripts/submenuToggle.js" ></script>
+    <script src="/scripts/submenuToggle.js"></script>
   </body>
 </html>
