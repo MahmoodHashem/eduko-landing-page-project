@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/menu-icon.css" />
     <link rel="stylesheet" href="./css/hero.css" />
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
     <title>Eduko</title>
   </head>
   <body>
@@ -433,14 +434,10 @@
                   />
 
                   <div class="about__experience-card">
-                    <i class="fa-solid fa-award" ></i>
+                    <i class="fa-solid fa-award"></i>
                     <div class="about__experience-text">
-                      <span class="about__experience-number">
-                        25+
-                      </span>
-                      <span class="about__experience-label">
-                        سال سابقه
-                      </span>
+                      <span class="about__experience-number"> 25+ </span>
+                      <span class="about__experience-label"> سال سابقه </span>
                     </div>
                   </div>
                 </div>
@@ -449,9 +446,78 @@
           </div>
         </div>
       </section>
+
+      <section class="courses">
+        <div class="courses__patterns">
+          <img src="./assets/images/shape-5.svg" alt="pattern" class="courses__pattern courses__pattern--1" />
+          
+          <img
+            src="./assets/images/shape-9.svg"
+            alt=""
+            class="courses__pattern courses__pattern--2"
+          />
+          <img src="./assets/images/shape-7.svg" alt="" class="courses__pattern courses__pattern--3" />
+          <img
+            src="./assets/images/shape-8.svg"
+            alt=""
+            class="courses__pattern courses__pattern--4"
+          />
+        </div>
+
+        <div class="courses__container">
+          <div class="courses__header">
+            <span class="courses__label"> دوره های ما </span>
+            <h2 class="courses__title">
+              دوره هابر اساس
+              <span class="courses__title-highlight"> دسته بندی </span>
+            </h2>
+          </div>
+          <div class="courses__carousel">
+            <div class="courses__track">
+              <article class="courses__card">
+                <i
+                  class="fa-solid courses__icon courses__icon--yellow fa-brush"
+                ></i>
+                <h3 class="courses__card-title">طراحی رابط کاربری</h3>
+                <p class="courses__card-desc">
+                  آموزش طراحی تجربه و رابط کاربری
+                </p>
+              </article>
+              <article class="courses__card">
+                <i
+                  class="fa-solid courses__icon courses__icon--green fa-bullhorn"
+                ></i>
+                <h3 class="courses__card-title">دیجیتال مارکتینگ</h3>
+                <p class="courses__card-desc">آموزش بازاریابی دیجیتال</p>
+              </article>
+              <article class="courses__card">
+                <i
+                  class="fa-solid courses__icon courses__icon--blue fa-laptop-code"
+                ></i>
+                <h3 class="courses__card-title">برنامه نویسی</h3>
+                <p class="courses__card-desc">آموزش برنامه نویسی وب</p>
+              </article>
+              <article class="courses__card">
+                <i
+                  class="fa-solid courses__icon courses__icon--red fa-book-open-reader"
+                ></i>
+                <h3 class="courses__card-title">توسعه فردی</h3>
+                <p class="courses__card-desc">آموزش مهارت های نرم</p>
+              </article>
+            </div>
+
+            <button class="courses__nav courses__nav--prev">
+              <i class="fa-solid fa-arrow-right"></i></button
+            ><button class="courses__nav courses__nav--next">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="/scripts/menu-toggler.js"></script>
     <script src="/scripts/submenuToggle.js"></script>
+    <script src="/scripts/carousel.js" ></script>
   </body>
 </html>
