@@ -1,0 +1,222 @@
+.about {
+  padding: 10rem 0;
+}
+
+.about__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about__header {
+  text-align: start;
+  margin-bottom: 6rem;
+  font-family: var(--font-secondary);
+}
+
+.about__label {
+  font-size: 1.6rem;
+  color: var(--color-primary-500);
+  font-size: var(--font-secondary);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.about__title {
+  font-size: 3.6rem;
+  color: var(--color-dark-500);
+  font-weight: 700;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  align-items: center;
+}
+
+.about__description {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--color-dark-400);
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about__feature {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about__feature-icon {
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.about__feature-icon--1 {
+  color: var(--color-primary-500);
+  background-color: var(--color-primary-200);
+}
+
+.about__feature-icon--2 {
+  color: var(--color-blue-500);
+  background-color: var(--color-blue-200);
+}
+
+.about__feature-icon--3 {
+  color: var(--color-secondary-500);
+  background-color: var(--color-secondary-200);
+}
+
+.about__feature-icon--4 {
+  color: var(--color-red-500);
+  background-color: var(--color-red-200);
+}
+
+.about__feature-text {
+  font-size: 1.4rem;
+  color: var(--color-dark-500);
+  font-weight: 500;
+  font-family: var(--font-secondary);
+}
+
+.about__cta {
+  align-self: flex-start;
+  padding: 1rem 1.6rem;
+  background-color: var(--color-primary-500);
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: transform 0.2s ease-in;
+  color: var(--color-dark-500);
+  margin-top: 2.5rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  -webkit-transition: transform 0.2s ease-in;
+  -moz-transition: transform 0.2s ease-in;
+  -ms-transition: transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
+  &:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+}
+
+.about__cta-icon {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: transform 0.2s ease-in;
+  -webkit-transition: transform 0.2s ease-in;
+  -moz-transition: transform 0.2s ease-in;
+  -ms-transition: transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
+}
+
+.about__cta:hover .about__cta-icon {
+  transform: translateX(0.5rem);
+  -webkit-transform: translateX(0.5rem);
+  -moz-transform: translateX(0.5rem);
+  -ms-transform: translateX(0.5rem);
+  -o-transform: translateX(0.5rem);
+}
+
+
+
+.about__images {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+}
+
+.about__image {
+    object-fit: cover; 
+    border-radius: 15rem;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: -1rem;
+    -webkit-border-radius: 15rem;
+    -moz-border-radius: 15rem;
+    -ms-border-radius: 15rem;
+    -o-border-radius: 15rem;
+}
+
+
+.about__image-portrait {
+    width: 50%;
+    height: 50rem;
+    outline-color: var(--color-primary-500);
+
+}
+
+.about__image-landscape {
+    width: 100%;
+    height: 40rem;
+    outline-color: white;
+}
+
+.about__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.about__experience-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-secondary-700);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 3rem; 
+    outline: 1px dashed var(--color-secondary-500);
+    outline-offset: 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    
+    .about__content, .about__features {
+        grid-template-columns: 1fr;
+    }
+
+    .about__images {
+        flex-direction: column;
+    }
+
+    .about__image-landscape, .about__image-portrait {
+        width: 100%;
+        height: 70rem;
+    }
+
+}
